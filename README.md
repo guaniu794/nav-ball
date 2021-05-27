@@ -1,5 +1,5 @@
-[![](https://img.shields.io/github/stars/MakerGYT/mini-menu?style=flat-square)](https://github.com/kuuga794/nav-ball/stargazers)
-[![](https://img.shields.io/github/forks/makergyt/mini-menu?style=flat-square)](https://github.com/kuuga794/nav-ball/network/members)
+[![](https://img.shields.io/github/stars/kuuga794/nav-ball?style=flat-square)](https://github.com/kuuga794/nav-ball/stargazers)
+[![](https://img.shields.io/github/forks/kuuga794/nav-ball?style=flat-square)](https://github.com/kuuga794/nav-ball/network/members)
 [![](https://img.shields.io/badge/basicLib->=2.2.3-brightgreen?logo=wechat)](https://github.com/kuuga794/nav-ball)
 
 ## 1 演示
