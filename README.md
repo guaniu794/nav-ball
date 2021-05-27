@@ -5,7 +5,7 @@
 ## 1 演示
 [在开发者工具中预览效果](https://developers.weixin.qq.com/s/e7TzxBmx7aqg)=>代码片段ID:`e7TzxBmx7aqg`
 
-![图1-1 截图](https://cdn.nlark.com/yuque/0/2020/gif/284449/1592180000986-7285c383-dafa-4aa7-ad01-80e407c37f31.gif)
+![图1-1 截图](https://read-1259514422.cos.ap-hongkong.myqcloud.com/resource/demo.gif)
 
 ## 2 安装使用
 1. 获取组件
