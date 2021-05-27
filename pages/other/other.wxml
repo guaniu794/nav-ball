@@ -1,0 +1,5 @@
+<!--pages/other/other.wxml-->
+<view class="text">富强、民主、文明、和谐</view>
+<view class="text">自由、平等、公正、法治</view>
+<view class="text">爱国、敬业、诚信、友善</view>
+

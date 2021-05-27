@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/other/other"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "component-nav-ball": "/components/nav-ball/nav-ball"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,27 @@
+
+<movable-area class="movable-area">
+  <movable-view class="movable-view ball-wrap" x="{{x}}" y="{{y}}" direction="all">
+
+    <view class="mask-container">
+      <view class="mask {{maskAnimation}}"></view>
+    </view>
+
+    <view class="btn-container">
+      <view catchtap="onClickAdd" class="btn-main {{btnAnimation}}">+</view>
+    </view>
+
+  </movable-view>
+</movable-area>
+
+<view class='menu-container' hidden='{{isFold}}'>
+  <view class='menu'>
+    <view class='menu-list'>
+      <view catchtap="goUrl" class='menu-item' wx:for='{{navs}}' wx:key="index" style="width:{{navs.length>=4?'25':100/navs.length}}%;justify-content:{{navs.length>=4?'flex-start':'center'}};animation-delay: {{(index+1)*0.1}}s;" data-url="{{item.url}}" data-type="{{item.type}}">
+        <image mode='widthFix' src='{{item.src}}' class="menu-icon"></image>
+        <text class='menu-name'>{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+

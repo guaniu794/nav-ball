@@ -1,0 +1,201 @@
+.ball-wrap {
+  height: 80rpx;
+  width: 80rpx;
+  z-index: 999;
+}
+
+.mask-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+}
+
+.mask {
+  height: 80rpx;
+  width: 80rpx;
+  background-color: #fcfcfc;
+  opacity: 0.9;
+  border-radius: 750rpx;
+  transform: scale(0);
+}
+
+.maskOpen {
+  animation: maskO 0.3s both;
+}
+
+.maskClose {
+  animation: maskC 0.3s both;
+}
+
+@keyframes maskO {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(50);
+  }
+}
+
+@keyframes maskC {
+  0% {
+    transform: scale(50);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+.btn-container {
+  width: rpx(100);
+  height: rpx(100);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 3;
+}
+
+.btn-main {
+  border-radius: 50%;
+  box-sizing: content-box;
+  height: 80rpx;
+  font-size: 80rpx;
+  width: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  box-shadow: 0 -2px 8px rgba(255, 255, 255, 0.15);
+  color: #fff;
+  background: var(--add-action);
+}
+
+.menuOpen {
+  animation: menuO 0.3s both;
+}
+
+.menuClose {
+  animation: menuC 0.3s both;
+}
+
+@keyframes menuO {
+  0% {
+    transform: rotate(0deg);
+    color: #fff;
+    background: var(--add-action);
+  }
+
+  100% {
+    transform: rotate(45deg);
+    color: #000;
+    background: #fff;
+  }
+}
+
+@keyframes menuC {
+  0% {
+    transform: rotate(45deg);
+    color: #000;
+    background: #fff;
+  }
+
+  100% {
+    transform: rotate(-0deg);
+    color: #fff;
+    background: var(--add-action);
+  }
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.menu {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column-reverse;
+  padding-bottom: calc(134rpx + env(safe-area-inset-bottom));
+  position: relative;
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-bottom: 30rpx;
+  pointer-events: auto;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: bounceInDown 0.45s linear both;
+}
+
+.menu-icon {
+  width: 80rpx;
+  height: 80rpx;
+  margin-bottom: 15rpx;
+  border-radius: 100%;
+}
+
+.menu-name {
+  color: #607d8b;
+  font-size: 25rpx;
+  font-weight: 600;
+}
+
+@keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  60% {
+    transform: translateY(-10%);
+  }
+
+  80% {
+    transform: translateY(10%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+page {
+	--add-action:#ff5638; /*定义颜色*/
+}
+
+.movable-area{
+  pointer-events:none;  /* 这个属性设置为none,让所有事件穿透过去 */
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.movable-view{ 
+  pointer-events: auto; /* 重设为auto,覆盖父属性设置 */
+}

@@ -1,0 +1,6 @@
+<view class="wrap">
+  <view class="intro">支持拖拽哦</view>
+</view>
+
+<!-- 导航球 -->
+<component-nav-ball navs="{{navs}}" />
